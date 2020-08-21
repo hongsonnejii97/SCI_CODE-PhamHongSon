@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Center Active</title>
+    <link rel="stylesheet" href="media/css/style.css">
+    <script src="media/dist/lib.min.js"></script>
+    <script src="media/dist/tiny.slider.min.js"></script>
+</head>
+<body>
+    
+    <h1 style="text-align: center;">Slider Center Active</h1>
+
+    <section id="page3" class="temp temp3">
+        <div class="container">
+            <div class="temp3_box temp3_slider">
+                <div class="item">
+                    <div class="div">
+                        <div class="pic">
+                            <div style="width: 100%;height: 300px;background: #005b59;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="div">
+                        <div class="pic">
+                            <div style="width: 100%;height: 300px;background: red;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="div">
+                        <div class="pic">
+                            <div style="width: 100%;height: 300px;background: blue;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="div">
+                        <div class="pic">
+                            <div style="width: 100%;height: 300px;background: violet;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="div">
+                        <div class="pic">
+                            <div style="width: 100%;height: 300px;background: saddlebrown;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .temp3 {
+        padding: 20px 0 30px;
+        position: relative;
+        }
+        @media screen and (max-width: 1440px) {
+        .temp3 {
+            padding: 0;
+        }
+        }
+        .temp3.loaded {
+        background: url(../images/t3-bg.jpg) center 0 no-repeat;
+        }
+        @media screen and (max-width: 1440px) {
+        .temp3.loaded {
+            background-size: 100%;
+        }
+        }
+        .temp3 .tempTitle p {
+        margin-bottom: 0;
+        }
+        .temp3 .tempTitle span {
+        color: #515151;
+        text-transform: uppercase;
+        font-size: 28px;
+        border-bottom: 1px solid #515151;
+        }
+        @media screen and (max-width: 414px) {
+        .temp3 .tempTitle span {
+            font-size: 24px;
+        }
+        }
+        .temp3_box {
+        padding-top: 20px;
+        }
+        @media screen and (max-width: 414px) {
+        .temp3_box {
+            padding-top: 0;
+        }
+        }
+        .temp3_box .item .div {
+        background-color: #fff;
+        color: #009189;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 24px;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        }
+        .temp3_box .pic img {
+        border-radius: 15px 15px 0 0px;
+        width: 100%;
+        display: block;
+        }
+        .temp3_box .text {
+        padding: 12px 0;
+        }
+        .temp3 .tns-item .div {
+        margin: 25px 40px;
+        transition: margin 400ms ease-out;
+        }
+        @media screen and (max-width: 768px) {
+        .temp3 .tns-item .div {
+            margin: 15px 20px;
+        }
+        }
+        @media screen and (max-width: 414px) {
+        .temp3 .tns-item .div {
+            margin: 0;
+        }
+        }
+        .temp3 .tns-item.center .div {
+        margin: 0;
+        transition: margin 400ms ease-out;
+        }
+        .temp3 #tns1-ow {
+        width: 100%;
+        margin: 0 auto;
+        }
+        .temp3 .tns-nav {
+        display: none;
+        }
+        .temp3 .tns-controls [aria-controls] {
+        color: #005b59;
+        background-color: #fff;
+        border: 2px solid #005b59;
+        font-size: 30px;
+        line-height: 0;
+        }
+        @media screen and (max-width: 768px) {
+        .temp3 .tns-controls [aria-controls] {
+            font-size: 15px;
+        }
+        }
+        .temp3 .tns-controls [aria-controls]:nth-child(1) {
+        position: absolute;
+        top: 60%;
+        left: -80px;
+        padding: 0 10px;
+        height: 40px;
+        border-radius: 40px;
+        }
+        @media screen and (max-width: 1440px) {
+        .temp3 .tns-controls [aria-controls]:nth-child(1) {
+            left: -40px;
+        }
+        }
+        @media screen and (max-width: 1024px) {
+        .temp3 .tns-controls [aria-controls]:nth-child(1) {
+            left: -5px;
+        }
+        }
+        @media screen and (max-width: 768px) {
+        .temp3 .tns-controls [aria-controls]:nth-child(1) {
+            height: 25px;
+            padding: 0 6px;
+            left: 0;
+        }
+        }
+        @media screen and (max-width: 414px) {
+        .temp3 .tns-controls [aria-controls]:nth-child(1) {
+            padding: 0 10px;
+            height: 31px;
+            left: 5px;
+            top: 55%;
+            z-index: 1;
+        }
+        }
+        .temp3 .tns-controls [aria-controls]:nth-child(2) {
+        position: absolute;
+        top: 60%;
+        right: -80px;
+        padding: 0 10px;
+        height: 40px;
+        border-radius: 40px;
+        }
+        @media screen and (max-width: 1440px) {
+        .temp3 .tns-controls [aria-controls]:nth-child(2) {
+            right: -40px;
+        }
+        }
+        @media screen and (max-width: 1024px) {
+        .temp3 .tns-controls [aria-controls]:nth-child(2) {
+            right: -5px;
+        }
+        }
+        @media screen and (max-width: 768px) {
+        .temp3 .tns-controls [aria-controls]:nth-child(2) {
+            height: 25px;
+            padding: 0 6px;
+            right: 0;
+        }
+        }
+        @media screen and (max-width: 414px) {
+        .temp3 .tns-controls [aria-controls]:nth-child(2) {
+            padding: 0 10px;
+            height: 31px;
+            right: 5px;
+            top: 55%;
+            z-index: 1;
+        }
+        }
+    </style>
+
+    <script>
+        const temp3_slider = tns({
+        container: '.temp3_slider',
+        items: 3,
+        slideBy: "page",
+        loop: true,
+        controls: true,
+        center: true,
+        mouseDrag: true,
+        swipeAngle: false,
+        autoplay: false,
+        gutter: 10,
+        responsive: {
+        0: {
+        items: 1,
+        },
+        768: {
+        items: 3,
+        }
+        },
+        });
+        temp3_slider.getInfo().slideItems[temp3_slider.getInfo().index].classList.add('center');
+        temp3_slider.events.on('indexChanged', () => {
+        const info = temp3_slider.getInfo();
+        const indexPrev = info.indexCached;
+        const indexCurr = info.index;
+        console.log(indexPrev, indexCurr);
+        info.slideItems[indexPrev].classList.remove('center');
+        info.slideItems[indexCurr].classList.add('center');
+        });
+    </script>
+
+</body>
+</html>

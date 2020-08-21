@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Person Regist</title>
+</head>
+<body>
+
+    <style>
+        .customReg{
+        position: fixed;
+        z-index: 14;
+        opacity: 0;
+        left:20px;
+        bottom:50px;
+        background:#04423c;
+        background-size:39px;
+        padding:10px 15px;
+        padding-left:60px;
+        border-radius: 15px;
+        }
+        .customReg__tt{
+        color:#f38b25;
+        font-size:14px;
+        }
+        .customReg__ct{
+        color:#fff;
+        font-size:17px;
+        text-transform: uppercase;
+        }
+    </style>
+
+    <h1>Popup Person Regist</h1>
+
+    <div class="customReg" id="random">
+        <div class="customReg__tt" id="ct_name">Khách hàng Phạm Phương Anh</div>
+        <div class="customReg__ct" id="ct_dk">đăng ký thành công</div>
+    </div>
+
+    <script>
+        var ctName = document.getElementById("ct_name");
+            var auto_refresh2 = setInterval(
+            function () {
+            showDK();
+            var t = randomDK();
+            ctName.innerHTML = t;
+        }, 2000);
+
+        var customReg = document.getElementById("random");
+            function showDK() {
+            customReg.style.opacity = customReg.style.opacity == "1" ? "0" : "1";
+        }
+
+        function randomDK() {
+            const random = arr => arr[Math.floor(Math.random() * arr.length)];
+            var t = random(['Phạm Phương Anh', 'Lê Thị Thu Thùy', 'Nguyễn Bích Hằng', 'Nguyễn Hồng Hà', 'Hoàng Hạnh Nguyên', 'Nguyễn Hoài Thương', 'Khổng Thị Kim Nhung', 'Chu Thanh Hà', 'Lê Thùy Dung', 'Nguyễn Thị Hương Giang', 'Vũ Thị Hồng Ngọc', 'Lê Thu Hằng', 'Nguyễn Hoàng Hải', 'Lê Thị Phương Linh', 'Hoàng Ánh Tuyết', 'Hoàng Khắc Tùng', 'Nguyễn Hồng Anh', 'Phạm Hoài Nam', 'Phạm Ánh Dương', 'Nguyễn Thanh Thủy', 'Đinh Thị Thanh Thúy', 'Trần Thị Minh Tâm', 'Nguyễn Thị Thùy Linh', 'Trần Thị Ngọc Ánh', 'Dương Ngọc Hoàn', 'Trần Thị Vy', 'Nguyễn THị Minh', 'Phan Kim Phượng', 'Hà Thanh Tân', 'Nguyễn Hồng Hạnh', 'Triệu Thị Vân Anh', 'Chu Quỳnh Trang', 'Hà Tố Uyên', 'Lê Thị Ngọc Diệp', 'Nguyễn Thị Lan Anh', 'Lê Thị Thu Hương', 'Ngô Thị Ngọc Bích', 'Hà Thị An', 'Nguyễn Thị Kim Hường' ]);
+            return t;
+            console.log(t);
+        }
+    </script>
+    
+</body>
+</html>
